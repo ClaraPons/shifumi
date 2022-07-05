@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Shifumi</title>
+</head>
+<body>
+    <main>
+        <section id="game">
+            <h1>Bienvenue sur une partie de Shifumi ! </h1>
+            <div class="img-container">
+                <div class="img-ia"><img id="img-sign-ia-container" /></div>
+                <div class="img-player"><img id="img-sign-player-container" /></div>
+            </div>
+            <h3>Cliquez sur un bouton !</h3>
+            <div class="button-container">
+                <button id="rockbutton" onclick="result('pierre')"><img src="pierre.png" /></button>
+                <button id="scissorsbutton" onclick="result('ciseaux')"><img src="ciseaux.png" /></button>
+                <button id="paperbutton" onclick="result('feuille')"> <img src="feuille.png" /></button>
+            </div>
+            <h4 id="winnerRound"></h4>
+
+        </section>
+        <section class="score-global">
+            <h2>Score</h2>
+            <div class="score">
+                <div class="score-player">
+                    <p id="player-score">0</p>
+                </div>
+                <div>
+                    <p>-</p>
+                </div>
+                <div class="score-ia">
+                    <p id="ia-score">0</p>
+                </div>
+            </div>  
+        </section>
+    </main>
+    <script src="index.js">
+    </script>
+</body>
+</html>
